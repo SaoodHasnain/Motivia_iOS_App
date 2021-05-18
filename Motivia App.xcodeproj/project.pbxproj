@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99ECF7D00F3AAAE7428CD970 /* Pods_Motivia_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232E58F0AF55E9C530EC2837 /* Pods_Motivia_App.framework */; };
+		F59D897525F0D3AE004EDCE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D897425F0D3AE004EDCE8 /* AppDelegate.swift */; };
+		F59D897725F0D3AE004EDCE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D897625F0D3AE004EDCE8 /* SceneDelegate.swift */; };
+		F59D897C25F0D3AE004EDCE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D897A25F0D3AE004EDCE8 /* Main.storyboard */; };
+		F59D897E25F0D3B0004EDCE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59D897D25F0D3B0004EDCE8 /* Assets.xcassets */; };
+		F59D898125F0D3B0004EDCE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D897F25F0D3B0004EDCE8 /* LaunchScreen.storyboard */; };
+		F5EF52F625F9FDFB007B5640 /* OnBoard5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF52F525F9FDFB007B5640 /* OnBoard5VC.swift */; };
+		F5EF52F925F9FE0F007B5640 /* OnBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF52F825F9FE0F007B5640 /* OnBoardCell.swift */; };
+		F5FC10FA25F0ECC200517B61 /* ImageUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FC10F925F0ECC200517B61 /* ImageUICollectionViewCell.xib */; };
+		F5FC10FD25F0ECCB00517B61 /* ImageUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC10FC25F0ECCB00517B61 /* ImageUICollectionViewCell.swift */; };
+		F5FC110125F0ECD900517B61 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC10FF25F0ECD900517B61 /* CornerRadius.swift */; };
+		F5FC110225F0ECD900517B61 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC110025F0ECD900517B61 /* CircleImage.swift */; };
+		F5FC110525F0ECEC00517B61 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC110425F0ECEC00517B61 /* ThemeViewController.swift */; };
+		F5FC112F25F25F4B00517B61 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC112E25F25F4B00517B61 /* User.swift */; };
+		F5FC113225F25FB700517B61 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC113125F25FB700517B61 /* QuoteModel.swift */; };
+		F5FC113525F260D300517B61 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC113425F260D300517B61 /* Category.swift */; };
+		F5FC113825F2626100517B61 /* ConstantsFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC113725F2626100517B61 /* ConstantsFiles.swift */; };
+		F5FC113B25F2633B00517B61 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC113A25F2633B00517B61 /* SubCategory.swift */; };
+		F5FC113F25F263D800517B61 /* OnBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC113E25F263D800517B61 /* OnBoardVC.swift */; };
+		F5FC114325F2641400517B61 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC114225F2641400517B61 /* DataService.swift */; };
+		F5FC114625F28C6600517B61 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC114525F28C6600517B61 /* IAPService.swift */; };
+		FA106BAA261B0B01001F8B07 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106BA9261B0B01001F8B07 /* UserInputViewController.swift */; };
+		FA106BB0261B21E2001F8B07 /* MICollectionViewBubbleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106BAF261B21E2001F8B07 /* MICollectionViewBubbleLayout.swift */; };
+		FA106BB5261B26D6001F8B07 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106BB4261B26D6001F8B07 /* SettingViewController.swift */; };
+		FA106BD2261B289F001F8B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA106BD1261B289E001F8B07 /* GoogleService-Info.plist */; };
+		FA106BD5261B2C96001F8B07 /* WidgetsOnbaordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106BD4261B2C96001F8B07 /* WidgetsOnbaordViewController.swift */; };
+		FA106BD9261B2E17001F8B07 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106BD8261B2E17001F8B07 /* QuotesViewController.swift */; };
+		FA106BDC261B5520001F8B07 /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA106BDB261B5520001F8B07 /* QuotesCell.swift */; };
+		FA47E6B7261EE89600A2240F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA47E6B6261EE89600A2240F /* WidgetKit.framework */; };
+		FA47E6B9261EE89600A2240F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA47E6B8261EE89600A2240F /* SwiftUI.framework */; };
+		FA47E6BC261EE89600A2240F /* Motivi_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47E6BB261EE89600A2240F /* Motivi_Widget.swift */; };
+		FA47E6BF261EE89700A2240F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA47E6BE261EE89700A2240F /* Assets.xcassets */; };
+		FA47E6C1261EE89700A2240F /* Motivi_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FA47E6BD261EE89600A2240F /* Motivi_Widget.intentdefinition */; };
+		FA47E6C2261EE89700A2240F /* Motivi_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FA47E6BD261EE89600A2240F /* Motivi_Widget.intentdefinition */; };
+		FA47E6C5261EE89700A2240F /* Motivi_WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA47E6B5261EE89600A2240F /* Motivi_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA5016B22615EFD100C703D7 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5016AC2615EFCB00C703D7 /* DMSans-Bold.ttf */; };
+		FA5016B32615EFD100C703D7 /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5016AD2615EFCC00C703D7 /* DMSans-Italic.ttf */; };
+		FA5016B42615EFD100C703D7 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5016AE2615EFCD00C703D7 /* DMSans-Medium.ttf */; };
+		FA5016B52615EFD100C703D7 /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5016AF2615EFCE00C703D7 /* DMSans-MediumItalic.ttf */; };
+		FA5016B62615EFD100C703D7 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5016B02615EFCF00C703D7 /* DMSans-Regular.ttf */; };
+		FA5016B72615EFD100C703D7 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5016B12615EFD000C703D7 /* DMSans-BoldItalic.ttf */; };
+		FA7E8EA5261D97DD000FE690 /* ExtensionSupportingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E8EA4261D97DD000FE690 /* ExtensionSupportingMethod.swift */; };
+		FAD65A4F2616085C00ECFB5A /* OnBoard4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD65A4E2616085C00ECFB5A /* OnBoard4VC.swift */; };
+		FAD65A52261608D100ECFB5A /* OnBoard4Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD65A51261608D100ECFB5A /* OnBoard4Cell.swift */; };
+		FAD65A5526161A3200ECFB5A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD65A5426161A3200ECFB5A /* CategoryViewController.swift */; };
+		FAD65A5826161AAF00ECFB5A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD65A5726161AAF00ECFB5A /* CategoryCell.swift */; };
+		FAD65A5B261621AE00ECFB5A /* CategoryTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD65A5A261621AE00ECFB5A /* CategoryTypeCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA47E6C3261EE89700A2240F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F59D896925F0D3AE004EDCE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA47E6B4261EE89600A2240F;
+			remoteInfo = Motivi_WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA47E6C9261EE89700A2240F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA47E6C5261EE89700A2240F /* Motivi_WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		232E58F0AF55E9C530EC2837 /* Pods_Motivia_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivia_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4026C250C8045EC43F7DFE1 /* Pods-Motivia App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivia App.release.xcconfig"; path = "Target Support Files/Pods-Motivia App/Pods-Motivia App.release.xcconfig"; sourceTree = "<group>"; };
+		F05A79BA59A546E436CF3948 /* Pods-Motivia App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivia App.debug.xcconfig"; path = "Target Support Files/Pods-Motivia App/Pods-Motivia App.debug.xcconfig"; sourceTree = "<group>"; };
+		F59D897125F0D3AE004EDCE8 /* Motivia App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motivia App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59D897425F0D3AE004EDCE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F59D897625F0D3AE004EDCE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F59D897B25F0D3AE004EDCE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F59D897D25F0D3B0004EDCE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F59D898025F0D3B0004EDCE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F59D898225F0D3B0004EDCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EF52F525F9FDFB007B5640 /* OnBoard5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoard5VC.swift; sourceTree = "<group>"; };
+		F5EF52F825F9FE0F007B5640 /* OnBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardCell.swift; sourceTree = "<group>"; };
+		F5FC10F925F0ECC200517B61 /* ImageUICollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageUICollectionViewCell.xib; sourceTree = "<group>"; };
+		F5FC10FC25F0ECCB00517B61 /* ImageUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUICollectionViewCell.swift; sourceTree = "<group>"; };
+		F5FC10FF25F0ECD900517B61 /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		F5FC110025F0ECD900517B61 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		F5FC110425F0ECEC00517B61 /* ThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		F5FC112E25F25F4B00517B61 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5FC113125F25FB700517B61 /* QuoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		F5FC113425F260D300517B61 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F5FC113725F2626100517B61 /* ConstantsFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsFiles.swift; sourceTree = "<group>"; };
+		F5FC113A25F2633B00517B61 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		F5FC113E25F263D800517B61 /* OnBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardVC.swift; sourceTree = "<group>"; };
+		F5FC114225F2641400517B61 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F5FC114525F28C6600517B61 /* IAPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
+		FA106BA9261B0B01001F8B07 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
+		FA106BAF261B21E2001F8B07 /* MICollectionViewBubbleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MICollectionViewBubbleLayout.swift; sourceTree = "<group>"; };
+		FA106BB4261B26D6001F8B07 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FA106BD1261B289E001F8B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA106BD4261B2C96001F8B07 /* WidgetsOnbaordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsOnbaordViewController.swift; sourceTree = "<group>"; };
+		FA106BD8261B2E17001F8B07 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		FA106BDB261B5520001F8B07 /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
+		FA47E6B5261EE89600A2240F /* Motivi_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Motivi_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA47E6B6261EE89600A2240F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FA47E6B8261EE89600A2240F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FA47E6BB261EE89600A2240F /* Motivi_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivi_Widget.swift; sourceTree = "<group>"; };
+		FA47E6BD261EE89600A2240F /* Motivi_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Motivi_Widget.intentdefinition; sourceTree = "<group>"; };
+		FA47E6BE261EE89700A2240F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA47E6C0261EE89700A2240F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5016AC2615EFCB00C703D7 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		FA5016AD2615EFCC00C703D7 /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic.ttf"; sourceTree = "<group>"; };
+		FA5016AE2615EFCD00C703D7 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		FA5016AF2615EFCE00C703D7 /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FA5016B02615EFCF00C703D7 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		FA5016B12615EFD000C703D7 /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FA7E8EA4261D97DD000FE690 /* ExtensionSupportingMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionSupportingMethod.swift; sourceTree = "<group>"; };
+		FAD65A4E2616085C00ECFB5A /* OnBoard4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoard4VC.swift; sourceTree = "<group>"; };
+		FAD65A51261608D100ECFB5A /* OnBoard4Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoard4Cell.swift; sourceTree = "<group>"; };
+		FAD65A5426161A3200ECFB5A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FAD65A5726161AAF00ECFB5A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FAD65A5A261621AE00ECFB5A /* CategoryTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTypeCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F59D896E25F0D3AE004EDCE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99ECF7D00F3AAAE7428CD970 /* Pods_Motivia_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA47E6B2261EE89600A2240F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA47E6B9261EE89600A2240F /* SwiftUI.framework in Frameworks */,
+				FA47E6B7261EE89600A2240F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA994CF87B3B9D89E98183DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05A79BA59A546E436CF3948 /* Pods-Motivia App.debug.xcconfig */,
+				B4026C250C8045EC43F7DFE1 /* Pods-Motivia App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F59D896825F0D3AE004EDCE8 = {
+			isa = PBXGroup;
+			children = (
+				F59D897325F0D3AE004EDCE8 /* Motivia App */,
+				FA47E6BA261EE89600A2240F /* Motivi_Widget */,
+				F59D897225F0D3AE004EDCE8 /* Products */,
+				EA994CF87B3B9D89E98183DD /* Pods */,
+				FE5536D9993C321A0E57340E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F59D897225F0D3AE004EDCE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F59D897125F0D3AE004EDCE8 /* Motivia App.app */,
+				FA47E6B5261EE89600A2240F /* Motivi_WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F59D897325F0D3AE004EDCE8 /* Motivia App */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC10E225F0E7B200517B61 /* Fonts */,
+				F5FC10C525F0E0E300517B61 /* Supporting Files */,
+				F5FC10C325F0E0D900517B61 /* Services */,
+				F5FC10C225F0E0D400517B61 /* Controllers */,
+				F5FC10C025F0E0D000517B61 /* Cells */,
+				F5FC10BD25F0E0C800517B61 /* View */,
+				F5FC10BA25F0E0BE00517B61 /* Model */,
+				F5FC10B625F0E0B100517B61 /* Delegate Files */,
+				F59D897A25F0D3AE004EDCE8 /* Main.storyboard */,
+				F59D897D25F0D3B0004EDCE8 /* Assets.xcassets */,
+				F59D897F25F0D3B0004EDCE8 /* LaunchScreen.storyboard */,
+				F59D898225F0D3B0004EDCE8 /* Info.plist */,
+				FA106BD1261B289E001F8B07 /* GoogleService-Info.plist */,
+			);
+			path = "Motivia App";
+			sourceTree = "<group>";
+		};
+		F5FC10B625F0E0B100517B61 /* Delegate Files */ = {
+			isa = PBXGroup;
+			children = (
+				F59D897425F0D3AE004EDCE8 /* AppDelegate.swift */,
+				F59D897625F0D3AE004EDCE8 /* SceneDelegate.swift */,
+			);
+			path = "Delegate Files";
+			sourceTree = "<group>";
+		};
+		F5FC10BA25F0E0BE00517B61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC112E25F25F4B00517B61 /* User.swift */,
+				F5FC113125F25FB700517B61 /* QuoteModel.swift */,
+				F5FC113425F260D300517B61 /* Category.swift */,
+				F5FC113A25F2633B00517B61 /* SubCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5FC10BD25F0E0C800517B61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC110025F0ECD900517B61 /* CircleImage.swift */,
+				F5FC10FF25F0ECD900517B61 /* CornerRadius.swift */,
+				F5FC10F925F0ECC200517B61 /* ImageUICollectionViewCell.xib */,
+				F5EF52F825F9FE0F007B5640 /* OnBoardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5FC10C025F0E0D000517B61 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC10FC25F0ECCB00517B61 /* ImageUICollectionViewCell.swift */,
+				FAD65A51261608D100ECFB5A /* OnBoard4Cell.swift */,
+				FAD65A5726161AAF00ECFB5A /* CategoryCell.swift */,
+				FAD65A5A261621AE00ECFB5A /* CategoryTypeCell.swift */,
+				FA106BDB261B5520001F8B07 /* QuotesCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F5FC10C225F0E0D400517B61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC113E25F263D800517B61 /* OnBoardVC.swift */,
+				F5FC114525F28C6600517B61 /* IAPService.swift */,
+				F5FC110425F0ECEC00517B61 /* ThemeViewController.swift */,
+				F5EF52F525F9FDFB007B5640 /* OnBoard5VC.swift */,
+				FAD65A4E2616085C00ECFB5A /* OnBoard4VC.swift */,
+				FAD65A5426161A3200ECFB5A /* CategoryViewController.swift */,
+				FA106BA9261B0B01001F8B07 /* UserInputViewController.swift */,
+				FA106BB4261B26D6001F8B07 /* SettingViewController.swift */,
+				FA106BD4261B2C96001F8B07 /* WidgetsOnbaordViewController.swift */,
+				FA106BD8261B2E17001F8B07 /* QuotesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5FC10C325F0E0D900517B61 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC114225F2641400517B61 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5FC10C525F0E0E300517B61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA106BAF261B21E2001F8B07 /* MICollectionViewBubbleLayout.swift */,
+				F5FC113725F2626100517B61 /* ConstantsFiles.swift */,
+				FA7E8EA4261D97DD000FE690 /* ExtensionSupportingMethod.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5FC10E225F0E7B200517B61 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA5016AB2615EFB600C703D7 /* Dmsansfont */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA47E6BA261EE89600A2240F /* Motivi_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				FA47E6BB261EE89600A2240F /* Motivi_Widget.swift */,
+				FA47E6BD261EE89600A2240F /* Motivi_Widget.intentdefinition */,
+				FA47E6BE261EE89700A2240F /* Assets.xcassets */,
+				FA47E6C0261EE89700A2240F /* Info.plist */,
+			);
+			path = Motivi_Widget;
+			sourceTree = "<group>";
+		};
+		FA5016AB2615EFB600C703D7 /* Dmsansfont */ = {
+			isa = PBXGroup;
+			children = (
+				FA5016AC2615EFCB00C703D7 /* DMSans-Bold.ttf */,
+				FA5016B12615EFD000C703D7 /* DMSans-BoldItalic.ttf */,
+				FA5016AD2615EFCC00C703D7 /* DMSans-Italic.ttf */,
+				FA5016AE2615EFCD00C703D7 /* DMSans-Medium.ttf */,
+				FA5016AF2615EFCE00C703D7 /* DMSans-MediumItalic.ttf */,
+				FA5016B02615EFCF00C703D7 /* DMSans-Regular.ttf */,
+			);
+			path = Dmsansfont;
+			sourceTree = "<group>";
+		};
+		FE5536D9993C321A0E57340E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				232E58F0AF55E9C530EC2837 /* Pods_Motivia_App.framework */,
+				FA47E6B6261EE89600A2240F /* WidgetKit.framework */,
+				FA47E6B8261EE89600A2240F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F59D897025F0D3AE004EDCE8 /* Motivia App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59D898525F0D3B0004EDCE8 /* Build configuration list for PBXNativeTarget "Motivia App" */;
+			buildPhases = (
+				40BD59FFD299A400D47B5AD9 /* [CP] Check Pods Manifest.lock */,
+				F59D896D25F0D3AE004EDCE8 /* Sources */,
+				F59D896E25F0D3AE004EDCE8 /* Frameworks */,
+				F59D896F25F0D3AE004EDCE8 /* Resources */,
+				541B5D15F76A326532656BFC /* [CP] Embed Pods Frameworks */,
+				FA47E6C9261EE89700A2240F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA47E6C4261EE89700A2240F /* PBXTargetDependency */,
+			);
+			name = "Motivia App";
+			productName = "Motivia App";
+			productReference = F59D897125F0D3AE004EDCE8 /* Motivia App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA47E6B4261EE89600A2240F /* Motivi_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA47E6C6261EE89700A2240F /* Build configuration list for PBXNativeTarget "Motivi_WidgetExtension" */;
+			buildPhases = (
+				FA47E6B1261EE89600A2240F /* Sources */,
+				FA47E6B2261EE89600A2240F /* Frameworks */,
+				FA47E6B3261EE89600A2240F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Motivi_WidgetExtension;
+			productName = Motivi_WidgetExtension;
+			productReference = FA47E6B5261EE89600A2240F /* Motivi_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F59D896925F0D3AE004EDCE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F59D897025F0D3AE004EDCE8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FA47E6B4261EE89600A2240F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F59D896C25F0D3AE004EDCE8 /* Build configuration list for PBXProject "Motivia App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F59D896825F0D3AE004EDCE8;
+			productRefGroup = F59D897225F0D3AE004EDCE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F59D897025F0D3AE004EDCE8 /* Motivia App */,
+				FA47E6B4261EE89600A2240F /* Motivi_WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F59D896F25F0D3AE004EDCE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59D898125F0D3B0004EDCE8 /* LaunchScreen.storyboard in Resources */,
+				FA5016B42615EFD100C703D7 /* DMSans-Medium.ttf in Resources */,
+				FA5016B22615EFD100C703D7 /* DMSans-Bold.ttf in Resources */,
+				FA5016B62615EFD100C703D7 /* DMSans-Regular.ttf in Resources */,
+				F5FC10FA25F0ECC200517B61 /* ImageUICollectionViewCell.xib in Resources */,
+				FA5016B72615EFD100C703D7 /* DMSans-BoldItalic.ttf in Resources */,
+				F59D897E25F0D3B0004EDCE8 /* Assets.xcassets in Resources */,
+				FA5016B52615EFD100C703D7 /* DMSans-MediumItalic.ttf in Resources */,
+				FA5016B32615EFD100C703D7 /* DMSans-Italic.ttf in Resources */,
+				FA106BD2261B289F001F8B07 /* GoogleService-Info.plist in Resources */,
+				F59D897C25F0D3AE004EDCE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA47E6B3261EE89600A2240F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA47E6BF261EE89700A2240F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40BD59FFD299A400D47B5AD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motivia App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		541B5D15F76A326532656BFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motivia App/Pods-Motivia App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Motivia App/Pods-Motivia App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Motivia App/Pods-Motivia App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F59D896D25F0D3AE004EDCE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FC113825F2626100517B61 /* ConstantsFiles.swift in Sources */,
+				FAD65A4F2616085C00ECFB5A /* OnBoard4VC.swift in Sources */,
+				F5EF52F925F9FE0F007B5640 /* OnBoardCell.swift in Sources */,
+				F5FC114325F2641400517B61 /* DataService.swift in Sources */,
+				F5FC113525F260D300517B61 /* Category.swift in Sources */,
+				F5FC110525F0ECEC00517B61 /* ThemeViewController.swift in Sources */,
+				F5FC114625F28C6600517B61 /* IAPService.swift in Sources */,
+				FAD65A5526161A3200ECFB5A /* CategoryViewController.swift in Sources */,
+				F5FC113B25F2633B00517B61 /* SubCategory.swift in Sources */,
+				F59D897525F0D3AE004EDCE8 /* AppDelegate.swift in Sources */,
+				F5FC110125F0ECD900517B61 /* CornerRadius.swift in Sources */,
+				FA106BD9261B2E17001F8B07 /* QuotesViewController.swift in Sources */,
+				FA106BB5261B26D6001F8B07 /* SettingViewController.swift in Sources */,
+				FA106BB0261B21E2001F8B07 /* MICollectionViewBubbleLayout.swift in Sources */,
+				FA47E6C2261EE89700A2240F /* Motivi_Widget.intentdefinition in Sources */,
+				F5FC113F25F263D800517B61 /* OnBoardVC.swift in Sources */,
+				F5FC112F25F25F4B00517B61 /* User.swift in Sources */,
+				FAD65A5B261621AE00ECFB5A /* CategoryTypeCell.swift in Sources */,
+				F5FC10FD25F0ECCB00517B61 /* ImageUICollectionViewCell.swift in Sources */,
+				F5FC113225F25FB700517B61 /* QuoteModel.swift in Sources */,
+				FAD65A52261608D100ECFB5A /* OnBoard4Cell.swift in Sources */,
+				F59D897725F0D3AE004EDCE8 /* SceneDelegate.swift in Sources */,
+				F5FC110225F0ECD900517B61 /* CircleImage.swift in Sources */,
+				FA106BD5261B2C96001F8B07 /* WidgetsOnbaordViewController.swift in Sources */,
+				FA7E8EA5261D97DD000FE690 /* ExtensionSupportingMethod.swift in Sources */,
+				FA106BDC261B5520001F8B07 /* QuotesCell.swift in Sources */,
+				F5EF52F625F9FDFB007B5640 /* OnBoard5VC.swift in Sources */,
+				FA106BAA261B0B01001F8B07 /* UserInputViewController.swift in Sources */,
+				FAD65A5826161AAF00ECFB5A /* CategoryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA47E6B1261EE89600A2240F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA47E6C1261EE89700A2240F /* Motivi_Widget.intentdefinition in Sources */,
+				FA47E6BC261EE89600A2240F /* Motivi_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA47E6C4261EE89700A2240F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA47E6B4261EE89600A2240F /* Motivi_WidgetExtension */;
+			targetProxy = FA47E6C3261EE89700A2240F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F59D897A25F0D3AE004EDCE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59D897B25F0D3AE004EDCE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F59D897F25F0D3B0004EDCE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59D898025F0D3B0004EDCE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F59D898325F0D3B0004EDCE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F59D898425F0D3B0004EDCE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F59D898625F0D3B0004EDCE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05A79BA59A546E436CF3948 /* Pods-Motivia App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Motivia App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Motivia-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F59D898725F0D3B0004EDCE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4026C250C8045EC43F7DFE1 /* Pods-Motivia App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Motivia App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Motivia-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FA47E6C7261EE89700A2240F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Motivi_Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Motivia-App.Motivi-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA47E6C8261EE89700A2240F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Motivi_Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Motivia-App.Motivi-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F59D896C25F0D3AE004EDCE8 /* Build configuration list for PBXProject "Motivia App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59D898325F0D3B0004EDCE8 /* Debug */,
+				F59D898425F0D3B0004EDCE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59D898525F0D3B0004EDCE8 /* Build configuration list for PBXNativeTarget "Motivia App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59D898625F0D3B0004EDCE8 /* Debug */,
+				F59D898725F0D3B0004EDCE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA47E6C6261EE89700A2240F /* Build configuration list for PBXNativeTarget "Motivi_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA47E6C7261EE89700A2240F /* Debug */,
+				FA47E6C8261EE89700A2240F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F59D896925F0D3AE004EDCE8 /* Project object */;
+}
